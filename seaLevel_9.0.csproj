@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>seaLevel_9._0</RootNamespace>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Eco.Core">
+      <HintPath>..\..\..\source_mods 9.0\Eco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Gameplay">
+      <HintPath>..\..\..\source_mods 9.0\Eco.Gameplay.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Shared">
+      <HintPath>..\..\..\source_mods 9.0\Eco.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Simulation">
+      <HintPath>..\..\..\source_mods 9.0\Eco.Simulation.dll</HintPath>
+    </Reference>
+    <Reference Include="jsonconfigsaver">
+      <HintPath>..\..\..\Mods 9.0\jsonconfigsaver.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
